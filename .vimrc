@@ -54,6 +54,7 @@
     Plugin 'pangloss/vim-javascript'
     Plugin 'elzr/vim-json'
     Plugin 'plasticboy/vim-markdown'
+    Plugin 'mustache/vim-mustache-handlebars'
 
     " Color schemes.
     Plugin 'stulzer/heroku-colorscheme'
