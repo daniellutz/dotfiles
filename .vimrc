@@ -6,6 +6,7 @@
   set colorcolumn=80,120     " Highlight columns 80 and 120.
   set cursorline             " Highlights cursor line.
   set encoding=utf-8         " The encoding displayed.
+  set expandtab              " Force tabs to always insert spaces.
   set fileencoding=utf-8     " The encoding written to file.
   set fileformats=unix       " Force file format to unix.
   set laststatus=2           " Always display the status line, even if only one window is displayed.
@@ -15,6 +16,8 @@
   set number                 " Show line numbers.
   set scrolloff=5            " Always shows 5 lines above or below the cursor.
   set shell=/bin/sh          " If you use OMZSH, Fish, or any other shell, this will force Vundle to use bash.
+  set shiftwidth=2           " Number of columns when using reindent operators.
+  set tabstop=2              " Makes a tab count for 2 spaces.
   set t_Co=256               " 256 colors in terminal.
 
   filetype plugin indent on  " Enable ViM to detect the type of file that is being edited.
