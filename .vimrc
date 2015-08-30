@@ -35,6 +35,7 @@
     " ViM plugins.
     Plugin 'kien/ctrlp.vim'
     Plugin 'mattn/gist-vim'
+    Plugin 'scrooloose/nerdtree'
     Plugin 'edkolev/promptline.vim'
     Plugin 'scrooloose/syntastic'
     Plugin 'edkolev/tmuxline.vim'
@@ -106,4 +107,17 @@
 
   map  n <Plug>(easymotion-next)
   map  p <Plug>(easymotion-prev)
+
+
+"""""""""""""""""""""
+" NERDTree Settings "
+"""""""""""""""""""""
+
+  let NERDTreeShowHidden=1
+
+  " Automatically opens NERDTree and focus on file.
+  autocmd vimenter * NERDTree | wincmd p
+
+  " Closes ViM if the only window left open is a NERDTree.
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
