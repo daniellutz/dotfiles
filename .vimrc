@@ -22,6 +22,9 @@
 
   filetype plugin indent on  " Enable ViM to detect the type of file that is being edited.
   syntax on                  " Enable syntax highlighting.
+  
+  " Remove trailing whitespace
+  autocmd BufWritePre * :%s/\s\+$//e
 
 
 """""""""""""""""""
