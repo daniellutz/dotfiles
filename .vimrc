@@ -8,7 +8,7 @@
   set encoding=utf-8         " The encoding displayed.
   set expandtab              " Force tabs to always insert spaces.
   set fileencoding=utf-8     " The encoding written to file.
-  set fileformats=unix       " Force file format to unix.
+  set fileformat=unix        " Force file format to unix.
   set laststatus=2           " Always display the status line, even if only one window is displayed.
   set nocompatible           " Force to use ViM.
   set noshowmode             " Hide ViM mode (because of airline).
@@ -22,7 +22,7 @@
 
   filetype plugin indent on  " Enable ViM to detect the type of file that is being edited.
   syntax on                  " Enable syntax highlighting.
-  
+
   " Remove trailing whitespace
   autocmd BufWritePre * :%s/\s\+$//e
 
