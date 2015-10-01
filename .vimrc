@@ -13,6 +13,7 @@
   set nocompatible           " Force to use ViM.
   set noshowmode             " Hide ViM mode (because of airline).
   set noshowmatch            " Don't show matching brackets/parentheses.
+  set nowrap                 " Do not break long lines.
   set number                 " Show line numbers.
   set scrolloff=5            " Always shows 5 lines above or below the cursor.
   set shell=/bin/sh          " If you use OMZSH, Fish, or any other shell, this will force Vundle to use bash.
