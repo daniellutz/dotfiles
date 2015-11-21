@@ -131,6 +131,3 @@
   " Automatically opens NERDTree and focus on file.
   autocmd vimenter * NERDTree | wincmd p
 
-  " Closes ViM if the only window left open is a NERDTree.
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
