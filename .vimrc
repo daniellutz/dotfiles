@@ -126,8 +126,15 @@
 " NERDTree Settings "
 """""""""""""""""""""
 
+  " Shortcut to open NERDTree.
+  map <C-n> :NERDTreeToggle<CR>
+
+  " Show hidden files.
   let NERDTreeShowHidden=1
 
   " Automatically opens NERDTree and focus on file.
   autocmd vimenter * NERDTree | wincmd p
+
+  " Automatically closes ViM if NERDTree is the only open window.
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
