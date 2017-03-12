@@ -127,7 +127,7 @@
 """""""""""""""""""""
 
   " Shortcut to open NERDTree.
-  map <C-n> :NERDTreeToggle<CR>
+  map <C-e> :NERDTreeToggle<CR>
 
   " Show hidden files.
   let NERDTreeShowHidden=1
