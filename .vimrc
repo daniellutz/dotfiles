@@ -21,7 +21,6 @@
   set tabstop=2              " Makes a tab count for 2 spaces.
   set t_Co=256               " 256 colors in terminal.
 
-  filetype plugin indent on  " Enable ViM to detect the type of file that is being edited.
   syntax on                  " Enable syntax highlighting.
 
   " Remove trailing whitespace
@@ -31,6 +30,9 @@
 """""""""""""""""""
 " Vundle Settings "
 """""""""""""""""""
+
+  " Disable filetype before loading Vundle.
+  filetype off
 
   set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#begin()
@@ -65,6 +67,8 @@
     Plugin 'stulzer/heroku-colorscheme'
   call vundle#end()
 
+  " Enable filetype again.
+  filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""
 " ViM's color scheme and color columns "
