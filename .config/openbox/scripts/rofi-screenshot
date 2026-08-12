@@ -58,7 +58,7 @@ notify_view() {
 	notify_cmd_shot='dunstify -u low -h string:x-dunst-stack-tag:obscreenshot -i /usr/share/archcraft/icons/dunst/picture.png'
 	${notify_cmd_shot} "Copied to clipboard."
 	paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga &>/dev/null &
-	# viewnior ${dir}/"$file"
+	viewnior ${dir}/"$file"
 	if [[ -e "$dir/$file" ]]; then
 		${notify_cmd_shot} "Screenshot Saved."
 	else
@@ -80,7 +80,7 @@ countdown () {
 }
 
 # take shots
- shotnow () {
+shotnow () {
 	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
 	notify_view
 }
@@ -106,34 +106,6 @@ shotarea () {
 	cd ${dir} && maim -u -f png -s -b 2 -c ${border},0.25 -l | copy_shot
 	notify_view
 }
-
-#shotnow () {
-#	cd ${dir} && sleep 0.5 && flameshot full --raw | copy_shot
-#	notify_view
-#}
-
-#shot5 () {
-#	countdown '5'
-#	sleep 1 && cd ${dir} && flameshot full --raw | copy_shot
-#	notify_view
-#}
-
-#shot10 () {
-#	countdown '10'
-#	sleep 1 && cd ${dir} && flameshot full --raw | copy_shot
-#	notify_view
-#}
-
-#shotwin () {
-#	eval $(xdotool getactivewindow getwindowgeometry --shell)
-#	cd ${dir} && flameshot full --region "${WIDTH}x${HEIGHT}+${X}+${Y}" --raw | copy_shot
-#	notify_view
-#}
-
-#shotarea () {
-#	cd ${dir} && flameshot gui --raw | copy_shot
-#	notify_view
-#}
 
 # Execute Command
 run_cmd() {

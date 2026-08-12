@@ -53,7 +53,7 @@ run_bg ~/.config/openbox/themes/launch-bar.sh
 run_bg ~/.config/openbox/scripts/ob-picom
 
 # Dock
-# run plank
+run plank
 
 # Desktop Services ------------------------------------------
 
