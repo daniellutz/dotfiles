@@ -53,7 +53,7 @@ run_bg ~/.config/openbox/themes/launch-bar.sh
 run_bg ~/.config/openbox/scripts/ob-picom
 
 # Dock
-run plank
+# run plank
 
 # Desktop Services ------------------------------------------
 
@@ -105,3 +105,4 @@ run ksuperkey -e 'Super_R=Alt_L|F1'
 # Reload theme after monitor configuration changes
 # run_bg sh -c "sleep 1.5 && archcraft-reload-theme"
 
+playerctld daemon &

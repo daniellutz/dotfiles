@@ -1,10 +1,17 @@
 # dotfiles
 
-Installation setup for WSL:
+These dotfiles provide a small change in Archcraft's default theme Polybar and provide a very basic tmux configuration file.
+
+<br />
+
+![](./dotfiles.png)
+
+### Setup
+
+The setup aims to simply remove the default folder, create a symlink on the dotfiles and reload the configurations:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade -y
-$ sudo apt-get install -y python3-pip
-$ pip3 install ansible
+$ rm -rf ~/.config/openbox
+$ ln -s "$HOME/W/dotfiles/.config/openbox" "$HOME/.config/openbox"
+$ archcraft-reload-theme
 ```
