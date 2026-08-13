@@ -4,7 +4,7 @@ These dotfiles provide a small change in Archcraft's default theme Polybar and p
 
 <br />
 
-![](./dotfiles.png)
+![](./dotfiles.png?v1)
 
 ### Setup
 
